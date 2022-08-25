@@ -1,0 +1,29 @@
+<html> 
+<head> 
+<title>t1</title> 
+<script type="text/javascript"> 
+	let vari = 0; 
+    function deleteNode(vari){
+    	const element = document.getElementById(vari);
+		element.remove();
+    }
+	function addNode() 
+       {
+          var newP = document.createElement("p");
+        //   var textNode = document.createElement("div");
+          var httm = document.innerHTML(
+            '<p id="vari">This is a new text node<button onclick="deleteNode(vari);">asdfgh</button></p>'   
+          ); 
+          document.getElementById(vari);
+          vari++;
+        //   textnode.appendChild(httm);
+        //   newP.appendChild(textNode);
+          newP.appendChild(httm);
+          document.getElementById("firstP").appendChild(newP); 
+       } 
+</script> </head> 
+<body>
+<button onclick="addNode();">bcmc</button>
+
+<p id="firstP">firstP<p> </body> 
+</html>
