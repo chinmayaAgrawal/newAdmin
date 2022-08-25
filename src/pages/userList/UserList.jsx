@@ -35,7 +35,7 @@ const addNode =()=>
         document.getElementById("firstP").appendChild(newP); 
      } 
   const columns = [
-    { field: "id", headerName: "ID", width: 90,
+    { field: "id", headerName: "ID", width: 90,editable:false,
     renderCell: (params) => {
       return (
         <>
@@ -51,6 +51,7 @@ const addNode =()=>
       field: "user",
       headerName: "Question",
       width: 500,
+      editable:true,
       renderCell: (params) => {
         return (
           <>
@@ -78,6 +79,7 @@ const addNode =()=>
       field: "transaction",
       headerName: "Answer",
       width: 500,
+      editable:true,
       renderCell: (params) => {
         return (
           <>
@@ -102,6 +104,7 @@ const addNode =()=>
       field: "status",
       headerName: "Status",
       width: 120,
+      //editable:true,
       renderCell: (params) => {
         if (params.row.status === "inactive"){
         return (

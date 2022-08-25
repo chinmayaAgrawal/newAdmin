@@ -39,28 +39,6 @@ export default function Topbar() {
             <button class="test" >ADD</button>
           </div>
           </Link>
-        <Link to="/notifications" className="link" >
-          <div className="topbarIconContainer">
-            <NotificationsNone />
-            <span className="topIconBadge">{countNotify}</span>
-          </div>
-          </Link>
-          <Link to="/issue" className="link" >
-          <div className="topbarIconContainer">
-            <Language />
-            <span className="topIconBadge">{countIssue}</span>
-          </div>
-          </Link>
-          <Link to="/admin" className="link" >
-          <div className="topbarIconContainer">
-            <Settings />
-          </div>
-          </Link>
-          <Link to="/admin" className="link" >
-          <div className="topbarIconContainer">
-          <img src="https://ej2.syncfusion.com/demos/src/grid/images/2.png" alt="" className="topAvatar" />
-          </div>
-          </Link>
         </div>
       </div>
     </div>
