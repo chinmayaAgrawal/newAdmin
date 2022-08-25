@@ -9,6 +9,7 @@ import User from "./pages/user/User";
 import NewUser from "./pages/newUser/NewUser";
 import SensorsList from "./pages/sensors/SensorsList";
 import ProductList from "./pages/productList/ProductList";
+import Admin from "./pages/admin/Admin";
 import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
 import Login from "./pages/login/Login";
@@ -58,6 +59,9 @@ function App() {
           </Route>
           <Route path="/users">
             <UserList />
+          </Route>
+          <Route path="/admin">
+            <Admin />
           </Route>
           <Route path="/user">
             <User />

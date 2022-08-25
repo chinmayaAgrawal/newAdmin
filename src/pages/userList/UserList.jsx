@@ -1,6 +1,7 @@
 import "./userList.css";
 import { DataGrid } from "@material-ui/data-grid";
 import { DeleteOutline,HighlightOff,DoneAll} from "@material-ui/icons";
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 import { dataRows } from "../../dummyData";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -14,14 +15,35 @@ export default function UserList() {
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
   };
-  
+  let vari = 0; 
+  const deleteNode=(vari)=>{
+    const element = document.getElementById(vari);
+  element.remove();
+  }
+const addNode =()=> 
+     {
+        var newP = document.createElement("p");
+      //   var textNode = document.createElement("div");
+        var httm = document.innerHTML(
+          '<p id="vari">This is a new text node<button onclick="deleteNode(vari)">asdfgh</button></p>'   
+        ); 
+        document.getElementById(vari);
+        vari++;
+      //   textnode.appendChild(httm);
+      //   newP.appendChild(textNode);
+        newP.appendChild(httm);
+        document.getElementById("firstP").appendChild(newP); 
+     } 
   const columns = [
     { field: "id", headerName: "ID", width: 90,
     renderCell: (params) => {
       return (
+        <>
         <div className="userListUser">
           {params.id}
         </div>
+       
+        </>
       );
     },
   },
@@ -34,10 +56,10 @@ export default function UserList() {
           <>
           <div className="userListUser">
             {params.row.username}
-          </div>
-           <div className="altquestion">
             
-           </div>
+          </div>
+          <hr></hr>
+          <div><AddCircleIcon className= "add" /></div>
            </>
         );
       },
@@ -62,7 +84,14 @@ export default function UserList() {
             <div  className="userListUser">
               {params.row.transaction}
             </div>
-           
+            <>
+          <div className="userListUser">
+            {params.row.username}
+            
+          </div>
+          <hr></hr>
+          <div><AddCircleIcon className= "add" /></div>
+           </>
           </>
         );
       },

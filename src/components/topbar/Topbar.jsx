@@ -22,21 +22,21 @@ export default function Topbar() {
       countIssue =countIssue+1;
     
   })
-  
-
-
   return (
     <div className="topbar">
-     
       <div className="topbarWrapper">
         <div className="topLeft">
-          <span  className="logo" >QNA_Admin 1.0</span>
-       
+          <span  className="logo" >QNA_Admin 1.0</span>  
         </div>
         <div className="topRight">
         <Link to="/qna" className="link" >
           <div className="topbarIconContainer">
             <button class="test" >TEST</button>
+          </div>
+          </Link>
+          <Link to="/newUser" className="link" >
+          <div className="topbarIconContainer">
+            <button class="test" >ADD</button>
           </div>
           </Link>
         <Link to="/notifications" className="link" >
@@ -51,12 +51,12 @@ export default function Topbar() {
             <span className="topIconBadge">{countIssue}</span>
           </div>
           </Link>
-          <Link to="/user" className="link" >
+          <Link to="/admin" className="link" >
           <div className="topbarIconContainer">
             <Settings />
           </div>
           </Link>
-          <Link to="/user" className="link" >
+          <Link to="/admin" className="link" >
           <div className="topbarIconContainer">
           <img src="https://ej2.syncfusion.com/demos/src/grid/images/2.png" alt="" className="topAvatar" />
           </div>

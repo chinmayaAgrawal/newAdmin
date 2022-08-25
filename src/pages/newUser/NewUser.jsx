@@ -18,8 +18,8 @@ export default function NewUser() {
           <input type="email" placeholder="sagi5@gmail.com" />
         </div>
         <div className="newUserItem">
-          <label>Phone</label>
-          <input type="text" placeholder="+91 123 456 78" />
+          <label>Meta tags</label>
+          <input type="text" placeholder="id:1234" />
         </div>
         <div className="newUserItem">
           <label>Active</label>
