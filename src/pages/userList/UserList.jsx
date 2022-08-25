@@ -1,6 +1,7 @@
 import "./userList.css";
 import { DataGrid } from "@material-ui/data-grid";
-import { DeleteOutline,HighlightOff,DoneAll} from "@material-ui/icons";
+import { DeleteOutline,HighlightOff,DoneAll, CropFree} from "@material-ui/icons";
+import {GridCellEditStopReasons} from "@material-ui/core";
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import { dataRows } from "../../dummyData";
 import { Link } from "react-router-dom";
@@ -11,7 +12,6 @@ export default function UserList() {
   const [data, setData] = useState(dataRows);
   const [pageSize, setPageSize] = useState(10);
 
-  
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
   };
@@ -35,7 +35,7 @@ const addNode =()=>
         document.getElementById("firstP").appendChild(newP); 
      } 
   const columns = [
-    { field: "id", headerName: "ID", width: 90,editable:false,
+    { field: "id", headerName: "ID", width: 90,
     renderCell: (params) => {
       return (
         <>
@@ -56,10 +56,8 @@ const addNode =()=>
         return (
           <>
           <div className="userListUser">
-            {params.row.username}
-            
+            {params.row.username}    
           </div>
-          <hr></hr>
           <div><AddCircleIcon className= "add" /></div>
            </>
         );
@@ -86,15 +84,12 @@ const addNode =()=>
             <div  className="userListUser">
               {params.row.transaction}
             </div>
-            <>
           <div className="userListUser">
-            {params.row.username}
             
           </div>
           <hr></hr>
           <div><AddCircleIcon className= "add" /></div>
            </>
-          </>
         );
       },
       
@@ -143,7 +138,7 @@ const addNode =()=>
   ];
   return (
     <div className="userList">
-      <DataGrid 
+      <DataGrid width
         rows={data}
         disableSelectionOnClick
         columns={columns}
@@ -154,6 +149,7 @@ const addNode =()=>
         onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
         rowsPerPageOptions={[5, 10, 20]}
         pagination
+        experimentalFeatures={{ newEditingApi: true }}
         {...data}
       />
     </div>

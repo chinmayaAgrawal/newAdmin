@@ -1,6 +1,6 @@
 import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
-import QnA from "./components/qna/QnA";
+//import QnA from "./components/qna/QnA";
 import "./App.css";
 import Home from "./pages/home/Home";
 import { BrowserRouter as Router, Switch, Route,Redirect } from "react-router-dom";
@@ -10,6 +10,7 @@ import NewUser from "./pages/newUser/NewUser";
 import SensorsList from "./pages/sensors/SensorsList";
 import ProductList from "./pages/productList/ProductList";
 import Admin from "./pages/admin/Admin";
+//import Test2 from "./pages/test/Test2";
 import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
 import Login from "./pages/login/Login";
@@ -45,7 +46,6 @@ function App() {
       <div className="container" >
         <Sidebar />
         <Route path='/test'>
-        <QnA />
       </Route>
         <Route path="/notifications">
             <Notifications />

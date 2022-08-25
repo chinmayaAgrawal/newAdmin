@@ -29,7 +29,7 @@ export default function Topbar() {
           <span  className="logo" >QNA_Admin 1.0</span>  
         </div>
         <div className="topRight">
-        <Link to="/qna" className="link" >
+        <Link to="/test" className="link" >
           <div className="topbarIconContainer">
             <button class="test" >TEST</button>
           </div>
