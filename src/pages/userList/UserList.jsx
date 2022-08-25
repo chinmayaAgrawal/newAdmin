@@ -15,25 +15,32 @@ export default function UserList() {
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
   };
-  let vari = 0; 
-  const deleteNode=(vari)=>{
-    const element = document.getElementById(vari);
-  element.remove();
-  }
-const addNode =()=> 
-     {
-        var newP = document.createElement("p");
-      //   var textNode = document.createElement("div");
-        var httm = document.innerHTML(
-          '<p id="vari">This is a new text node<button onclick="deleteNode(vari)">asdfgh</button></p>'   
-        ); 
-        document.getElementById(vari);
-        vari++;
-      //   textnode.appendChild(httm);
-      //   newP.appendChild(textNode);
-        newP.appendChild(httm);
-        document.getElementById("firstP").appendChild(newP); 
-     } 
+
+  const [serviceList, setServiceList] = useState([{ service: "" }]);
+
+  const handleServiceChange = (e, index) => {
+    const { name, value } = e.target;
+    const list = [...serviceList];
+    list[index][name] = value;
+    setServiceList(list);
+  };
+
+  const handleServiceRemove = (index) => {
+    const list = [...serviceList];
+    list.splice(index, 1);
+    setServiceList(list);
+  };
+
+  const handleServiceAdd = () => {
+    setServiceList([...serviceList, { service: "" }]);
+  };
+  
+  function addNode() {
+    var x = document.createElement("INPUT");
+    x.setAttribute("type", "text");
+    x.setAttribute("value", "Hello");
+    document.body.appendChild(x);
+}
   const columns = [
     { field: "id", headerName: "ID", width: 90,
     renderCell: (params) => {
@@ -58,7 +65,8 @@ const addNode =()=>
           <div className="userListUser">
             {params.row.username}    
           </div>
-          <div><AddCircleIcon className= "add" /></div>
+          <div>
+            <button className= "add" onClick={addNode()}></button></div>
            </>
         );
       },
@@ -85,10 +93,45 @@ const addNode =()=>
               {params.row.transaction}
             </div>
           <div className="userListUser">
-            
+          <form className="App" autoComplete="off">
+      <div className="form-field">
+        {serviceList.map((singleService, index) => (
+          <div key={index} className="services">
+            <div className="first-division">
+              <input
+                name="service"
+                type="text"
+                id="service"
+                value={singleService.service}
+                onChange={(e) => handleServiceChange(e, index)}
+                required
+              />
+              {serviceList.length - 1 === index && serviceList.length < 4 && (
+                <button
+                  type="button"
+                  onClick={handleServiceAdd}
+                  className="add-btn"
+                >
+                  <span>Add</span>
+                </button>
+              )}
+            </div>
+            <div className="second-division">
+              {serviceList.length !== 1 && (
+                <button
+                  type="button"
+                  onClick={() => handleServiceRemove(index)}
+                  className="remove-btn"
+                >
+                  <span>Remove</span>
+                </button>
+              )}
+            </div>
           </div>
-          <hr></hr>
-          <div><AddCircleIcon className= "add" /></div>
+        ))}
+      </div>
+      </form>
+          </div>
            </>
         );
       },

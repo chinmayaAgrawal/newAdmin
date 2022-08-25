@@ -9,7 +9,7 @@
     }
 	function addNode() 
        {
-          var newP = document.createElement("p");
+       /*   var newP = document.createElement("p");
         //   var textNode = document.createElement("div");
           var httm = document.innerHTML(
             '<p id="vari">This is a new text node<button onclick="deleteNode(vari);">asdfgh</button></p>'   
@@ -19,7 +19,13 @@
         //   textnode.appendChild(httm);
         //   newP.appendChild(textNode);
           newP.appendChild(httm);
-          document.getElementById("firstP").appendChild(newP); 
+          document.getElementById("firstP").appendChild(newP);*/
+          var tag = document.createElement("p");
+          vari+=1;
+          var text = document.createElement("<button onclick='deleteNode(vari)'>asdfgh</button>");
+          tag.appendChild(text);
+          var element = document.getElementById("new");
+          element.appendChild(tag); 
        } 
 </script> </head> 
 <body>
