@@ -1,6 +1,6 @@
 import "./userList.css";
 import { DataGrid } from "@material-ui/data-grid";
-import { DeleteOutline,HighlightOff,DoneAll, CropFree} from "@material-ui/icons";
+import { DeleteOutline,HighlightOff,DoneAll, CropFree, DeleteOutlineRounded} from "@material-ui/icons";
 import {GridCellEditStopReasons} from "@material-ui/core";
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import { dataRows } from "../../dummyData";
@@ -23,36 +23,61 @@ const confirmDelete=(id)=>
   }else{
     return false;
   }
-
 }
 
+const [page, setPage] = useState(2);
+const [rowsPerPage, setRowsPerPage] = useState(10);
 
+const handleChangePage = (event, newPage) => {
+  setPage(newPage);
+};
 
-  const [serviceList, setServiceList] = useState([{ service: "" }]);
+const handleChangeRowsPerPage = (event) => {
+  setRowsPerPage(parseInt(event.target.value, 10));
+  setPage(0);
+};
 
-  const handleServiceChange = (e, index) => {
-    const { name, value } = e.target;
-    const list = [...serviceList];
-    list[index][name] = value;
-    setServiceList(list);
-  };
+var btnpa =document.getElementById('remove');
 
-  const handleServiceRemove = (index) => {
-    const list = [...serviceList];
-    list.splice(index, 1);
-    setServiceList(list);
-  };
+let vari = 0;
+function addNode(){
+  document.getElementById("l1").innerHTML += `<div>${vari}<button id ="var${vari} onclick="
+  deleteNode(var${vari});">Delete</button></div>`;
+  vari++;
+  if(vari ===1000)
+    vari=0;
+}
 
-  const handleServiceAdd = () => {
-    setServiceList([...serviceList, { service: "" }]);
-  };
+function deleteNode(id){
+   var del=id.parentElement;
+   del.remove();
+   var u =0;
+}
+  // const [serviceList, setServiceList] = useState([{ service: "" }]);
+
+  // const handleServiceChange = (e, index) => {
+  //   const { name, value } = e.target;
+  //   const list = [...serviceList];
+  //   list[index][name] = value;
+  //   setServiceList(list);
+  // };
+
+  // const handleServiceRemove = (index) => {
+  //   const list = [...serviceList];
+  //   list.splice(index, 1);
+  //   setServiceList(list);
+  // };
+
+  // const handleServiceAdd = () => {
+  //   setServiceList([...serviceList, { service: "" }]);
+  // };
   
-  function addNode() {
+  /*function addNode() {
     var x = document.createElement("INPUT");
     x.setAttribute("type", "text");
     x.setAttribute("value", "Hello");
     document.body.appendChild(x);
-}
+}*/
   const columns = [
     { field: "id", headerName: "ID", width: 90,
     renderCell: (params) => {
@@ -77,8 +102,7 @@ const confirmDelete=(id)=>
           <div className="userListUser">
             {params.row.username}    
           </div>
-          <div>
-            <button className= "add" onClick={addNode()}></button></div>
+          <AddCircleIcon onClick="addNode();"/><span> Add follow up</span>
            </>
         );
       },
@@ -104,50 +128,32 @@ const confirmDelete=(id)=>
             <div  className="userListUser">
               {params.row.transaction}
             </div>
-          <div className="userListUser">
-          <form className="App" autoComplete="off">
-      <div className="form-field">
-        {serviceList.map((singleService, index) => (
-          <div key={index} className="services">
-            <div className="first-division">
-              <input
-                name="service"
-                type="text"
-                id="service"
-                value={singleService.service}
-                onChange={(e) => handleServiceChange(e, index)}
-                required
-              />
-              {serviceList.length - 1 === index && serviceList.length < 4 && (
-                <button
-                  type="button"
-                  onClick={handleServiceAdd}
-                  className="add-btn"
-                >
-                  <span>Add</span>
-                </button>
-              )}
+            <div class="userListUser">
+            <div id="list">
             </div>
-            <div className="second-division">
-              {serviceList.length !== 1 && (
-                <button
-                  type="button"
-                  onClick={() => handleServiceRemove(index)}
-                  className="remove-btn"
-                >
-                  <span>Remove</span>
-                </button>
-              )}
             </div>
-          </div>
-        ))}
-      </div>
-      </form>
-          </div>
-           </>
+            <AddCircleIcon id="l1" onClick="addNode();"/><span> Add follow up</span>
+            </>
         );
       },
       
+    },
+    {
+      field: "metaData",
+      headerName: "MetaData",
+      width: 200,
+      renderCell: (params) => {
+        return (
+          <>
+          <div class="userListUser">
+            {params.row.metaData.uid}
+          </div>
+          <div class="userListUser">
+          {params.row.metaData.recid}
+        </div>
+         </>          
+        );
+      },
     },
     
     {
@@ -204,9 +210,12 @@ const confirmDelete=(id)=>
         pageSize={pageSize}
         onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
         rowsPerPageOptions={[5, 10, 20]}
+        //page={page}
         pagination
+        onPageChange={handleChangePage}
+        rowsPerPage={rowsPerPage}
+        onRowsPerPageChange={handleChangeRowsPerPage}
         experimentalFeatures={{ newEditingApi: true }}
-        {...data}
       />
     </div>
   );

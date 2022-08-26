@@ -166,6 +166,10 @@ export const userData = [
       username: "keyboard not working",
       avatar:"https://ej2.syncfusion.com/demos/src/grid/images/2.png",
       email: "please report to service center",
+      metaData : {
+        'uid': '1234',
+        'recid': '1234bjdbv89',
+    },
       status: "active",
       transaction: "please report to service center",
     },
@@ -175,6 +179,10 @@ export const userData = [
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "user2@gmail.com",
+      metaData : {
+        'uid': '1234',
+        'recid': '1234bjdbv89',
+    },
       status: "active",
       transaction: "restart sacnner and clean surface off",
     },
@@ -183,6 +191,10 @@ export const userData = [
       username: "keyboard not working",
       avatar:"https://ej2.syncfusion.com/demos/src/grid/images/2.png",
       email: "please report to service center",
+      metaData : {
+        'uid': '1234',
+        'recid': '1234bjdbv89',
+    },
       status: "active",
       transaction: "please report to service center",
     },
@@ -192,6 +204,10 @@ export const userData = [
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "user2@gmail.com",
+      metaData : {
+        'uid': '1234',
+        'recid': '1234bjdbv89',
+    },
       status: "active",
       transaction: "restart sacnner and clean surface off",
     },
@@ -200,6 +216,10 @@ export const userData = [
       username: "keyboard not working",
       avatar:"https://ej2.syncfusion.com/demos/src/grid/images/2.png",
       email: "please report to service center",
+      metaData : {
+        'uid': '1234',
+        'recid': '1234bjdbv89',
+    },
       status: "inactive",
       transaction: "please report to service center",
     },
@@ -209,6 +229,10 @@ export const userData = [
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "user2@gmail.com",
+      metaData : {
+        'uid': '1234',
+        'recid': '1234bjdbv89',
+    },
       status: "active",
       transaction: "restart sacnner and clean surface off",
     },
@@ -217,6 +241,10 @@ export const userData = [
       username: "keyboard not working",
       avatar:"https://ej2.syncfusion.com/demos/src/grid/images/2.png",
       email: "please report to service center",
+      metaData : {
+        'uid': '1234',
+        'recid': '1234bjdbv89',
+    },
       status: "active",
       transaction: "please report to service center",
     },
@@ -226,26 +254,84 @@ export const userData = [
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "user2@gmail.com",
+      metaData : {
+        'uid': '1234',
+        'recid': '1234bjdbv89',
+    },
       status: "inactive",
       transaction: "restart sacnner and clean surface off",
     },
     {
       id: 9,
-      username: "User 9",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
+      username: "keyboard not working",
+      avatar:"https://ej2.syncfusion.com/demos/src/grid/images/2.png",
+      email: "please report to service center",
+      metaData : {
+        'uid': '1234',
+        'recid': '1234bjdbv89',
+    },
       status: "active",
-      transaction: "$120.00",
+      transaction: "please report to service center",
     },
     {
       id: 10,
-      username: "User 10",
+      username: "Scanner not responding",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
+      email: "user2@gmail.com",
+      metaData : {
+        'uid': '1234',
+        'recid': '1234bjdbv89',
+    },
       status: "active",
-      transaction: "$120.00",
+      transaction: "restart sacnner and clean surface off",
+    },
+    {
+      id: 11,
+      username: "keyboard not working",
+      avatar:"https://ej2.syncfusion.com/demos/src/grid/images/2.png",
+      email: "please report to service center",
+      metaData : {
+        'uid': '1234',
+        'recid': '1234bjdbv89',
+    },
+      status: "active",
+      transaction: "please report to service center",
+    },
+    {
+      id: 12,
+      username: "Scanner not responding",
+      avatar:
+        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      email: "user2@gmail.com",
+      metaData : {
+        'uid': '1234',
+        'recid': '1234bjdbv89',
+    },
+      status: "active",
+      transaction: "restart sacnner and clean surface off",
+    },
+    {
+      id: 13,
+      username: "keyboard not working",
+      avatar:"https://ej2.syncfusion.com/demos/src/grid/images/2.png",
+      email: "please report to service center",
+      metaData : {
+        'uid': '1234',
+        'recid': '1234bjdbv89',
+    },
+      status: "inactive",
+      transaction: "please report to service center",
+    },
+    {
+      id: 14,
+      username: "Scanner not responding",
+      avatar:
+        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      email: "user2@gmail.com",
+      
+      status: "active",
+      transaction: "restart sacnner and clean surface off",
     },
   ];
   export const userRows = [
