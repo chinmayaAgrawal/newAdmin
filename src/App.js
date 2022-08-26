@@ -16,7 +16,6 @@ import NewProduct from "./pages/newProduct/NewProduct";
 import Login from "./pages/login/Login";
 import SignUp from "./pages/signUp/SignUp";
 import AnalyticsMain from "./pages/analytics/AnalyticsMain";
-import GatewayList from "./pages/gateway/GatewayList";
 import TransactionList from "./pages/transaction/TransactionList";
 import Notifications from "./pages/notification/Notifications";
 import Issue from "./pages/issue/Issue";
@@ -84,15 +83,6 @@ function App() {
           <Route path="/newproduct">
             <NewProduct />
           </Route>
-          <Route path="/analytics">
-            <AnalyticsMain />
-          </Route>
-          <Route path="/transaction">
-            <TransactionList />
-          </Route>
-          <Route path="/gateway">
-            <GatewayList />
-          </Route>  
           
         </Switch>
           
