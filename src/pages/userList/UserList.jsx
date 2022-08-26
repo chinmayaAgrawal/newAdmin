@@ -138,26 +138,24 @@ function deleteNode(id){
       },
       
     },
-    {
-      field: "metaData",
-      headerName: "MetaData",
-      width: 200,
-      renderCell: (params) => {
-        return (
-          <>
-          <div class="userListUser">
-            {params.row.metaData.uid}
-            
-             <DeleteOutline onClick={() => confirmDelete(params.row.metaData.id)}/>
-
-          </div>
-          <div class="userListUser">
-          {params.row.metaData.recid}
-        </div>
-         </>          
-        );
-      },
-    },
+    // {
+    //   field: "metaData",
+    //   headerName: "MetaData",
+    //   width: 200,
+    //   renderCell: (params) => {
+    //     return (
+    //       <>
+    //       <div class="userListUser">
+    //         {params.row.metaData.uid}
+    //          <DeleteOutline onClick={() => confirmDelete(params.row.metaData.uid)}/>
+    //       </div>
+    //       <div class="userListUser">
+    //       {params.row.metaData.recid}
+    //     </div>
+    //      </>          
+    //     );
+    //   },
+    // },
     
     {
       field: "status",

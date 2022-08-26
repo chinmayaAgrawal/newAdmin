@@ -19,7 +19,6 @@ import VisibilityIcon from '@material-ui/icons/Visibility';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import { BrowserRouter as Router, Switch, Route, Redirect,Link } from "react-router-dom";
-import AppHome from "../app/AppHome";
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
