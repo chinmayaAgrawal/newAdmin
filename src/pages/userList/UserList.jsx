@@ -40,8 +40,8 @@ const handleChangeRowsPerPage = (event) => {
 var btnpa =document.getElementById('remove');
 
 let vari = 0;
-function addNode(){
-  document.getElementById("l1").innerHTML += `<div>${vari}<button id ="var${vari} onclick="
+ const addNode = ()=>{
+  document.getElementById("list").innerHTML += `<div>${vari}<button id ="var${vari} onclick="
   deleteNode(var${vari});">Delete</button></div>`;
   vari++;
   if(vari ===1000)
@@ -132,7 +132,7 @@ function deleteNode(id){
             <div id="list">
             </div>
             </div>
-            <AddCircleIcon id="l1" onClick="addNode();"/><span> Add follow up</span>
+            <AddCircleIcon id="l1" onClick={addNode}/><span> Add follow up</span>
             </>
         );
       },
@@ -147,6 +147,9 @@ function deleteNode(id){
           <>
           <div class="userListUser">
             {params.row.metaData.uid}
+            
+             <DeleteOutline onClick={() => confirmDelete(params.row.metaData.id)}/>
+
           </div>
           <div class="userListUser">
           {params.row.metaData.recid}
