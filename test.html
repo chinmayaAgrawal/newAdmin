@@ -20,16 +20,52 @@
         //   newP.appendChild(textNode);
           newP.appendChild(httm);
           document.getElementById("firstP").appendChild(newP);*/
-          var tag = document.createElement("p");
-          vari+=1;
-          var text = document.createElement("<button onclick='deleteNode(vari)'>asdfgh</button>");
-          tag.appendChild(text);
-          var element = document.getElementById("new");
-          element.appendChild(tag); 
+
        } 
 </script> </head> 
 <body>
 <button onclick="addNode();">bcmc</button>
-
-<p id="firstP">firstP<p> </body> 
+<p id="firstP">firstP<p>
+</body> 
 </html>
+
+<!-- 
+  import {useState} from 'react';
+
+const App = () => {
+  const [message, setMessage] = useState('');
+
+  const handleChange = event => {
+    setMessage(event.target.value);
+  };
+
+  const handleClick = event => {
+    event.preventDefault();
+
+    // 👇️ value of input field
+    console.log('old value: ', message);
+
+    // 👇️ set value of input field
+    setMessage('New value');
+  };
+
+  return (
+    <div>
+      <input
+        type="text"
+        id="message"
+        name="message"
+        onChange={handleChange}
+        value={message}
+      />
+
+      <h2>Message: {message}</h2>
+
+      <button onClick={handleClick}>Click</button>
+    </div>
+  );
+};
+
+export default App;
+
+-->

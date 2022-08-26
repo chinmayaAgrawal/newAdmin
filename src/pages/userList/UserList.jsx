@@ -15,6 +15,18 @@ export default function UserList() {
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
   };
+const confirmDelete=(id)=>
+{
+  var con=window.confirm("Are you sure you want to delete?");
+  if(con){
+    handleDelete(id);
+  }else{
+    return false;
+  }
+
+}
+
+
 
   const [serviceList, setServiceList] = useState([{ service: "" }]);
 
@@ -172,7 +184,8 @@ export default function UserList() {
             </Link>
             <DeleteOutline
               className="userListDelete"
-              onClick={() => handleDelete(params.row.id)}
+              
+              onClick={() => confirmDelete(params.row.id)}
             />
           </div>
         );
