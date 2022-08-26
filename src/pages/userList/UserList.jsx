@@ -147,13 +147,13 @@ function deleteNode(id){
           <>
           <div class="userListUser">
             {params.row.metaData.uid}
-            
-             <DeleteOutline onClick={() => confirmDelete(params.row.metaData.id)}/>
-
+             
+            <span> <button className="userListDelete" onClick={() => confirmDelete(params.row.metaData.id)}>x</button>
+            </span>
           </div>
           <div class="userListUser">
           {params.row.metaData.recid}
-        </div>
+          </div>
          </>          
         );
       },
