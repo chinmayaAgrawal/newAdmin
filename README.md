@@ -13,10 +13,10 @@ This is basically frontend part of the knowlege-base of alternative to QNA maker
 
 ## Functionality added till now ..
 
-- User will be able to ```view qna pairs``` [*p1]
-- User will be able to ```add qna pair``` [*p2]
-- User will be able to ```on screen edit editable data``` [*p2]  
-- User Will be able to delete ```pair data``` [*p2]
+- User will be able to ```view qna pairs``` -[*p1]
+- User will be able to ```add qna pair``` -[*p2]
+- User will be able to ```on screen edit editable data``` -[*p2]  
+- User Will be able to delete ```pair data``` -[*p2]
 - ```Pagination``` is added
 - User can ```set rows per page```
 - Data can be ```sorted``` in 
@@ -55,7 +55,41 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <hr>
 
-### Working
+## Working
+
+### Main view
+
+![Screenshot (1330)](https://user-images.githubusercontent.com/54171759/187070469-e6c4cb52-f2e0-46c4-971f-5389a58ffbfc.png)
+
+![Screenshot (1331)](https://user-images.githubusercontent.com/54171759/187070484-bcda2010-4262-4fdf-b87e-87f3dba1e836.png)
+
+
+### Adding pairs
+
+![add](https://user-images.githubusercontent.com/54171759/187071310-7d5b13ac-d006-4780-b727-6086e09ad6b1.png)
+
+
+### Deleting pairs
+
+![delete](https://user-images.githubusercontent.com/54171759/187071582-11666129-ff3c-4316-b21f-7c8707f1898c.png)
+
+
+### On-Screen Edit
+
+Just double click on qna pair cell to edit 
+
+![Edit](https://user-images.githubusercontent.com/54171759/187071767-0ff5af1e-7b43-4992-9095-8ae3974222a9.png)
+
+
+### Offscreen-Edit 
+
+![edit2](https://user-images.githubusercontent.com/54171759/187072088-4516aa08-e9bf-46f9-8929-0c1192bafcf2.png)
+
+
+### Pagination
+
+![pagination](https://user-images.githubusercontent.com/54171759/187072545-b0635164-7d55-44f7-a164-4d420225d3f0.png)
+
 
 
 <!-- #### `yarn test`
