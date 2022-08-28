@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Card,Badge,Accordion,FormControl,FormGroup,FormHelperText} from '@material-ui/core';
+import { FormControl,FormGroup,FormHelperText} from '@material-ui/core';
+//import {Card,Badge,Accordion} from '@material-ui/core';
 export default function AddQuestion(props) {
   const [question, setQuestion] = useState("");
   const submit = (e) => {

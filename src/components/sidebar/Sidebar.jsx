@@ -1,19 +1,19 @@
 import "./sidebar.css";
-import {
-  LineStyle,
-  Timeline,
-  TrendingUp,
-  PermIdentity,
-  Storefront,
-  AttachMoney,
-  BarChart,
-  MailOutline,
-  DynamicFeed,
-  ChatBubbleOutline,
-  WorkOutline,
-  Report,
-  LocalParking
-} from "@material-ui/icons";
+// import {
+//   LineStyle,
+//   Timeline,
+//   TrendingUp,
+//   Storefront,
+//   AttachMoney,
+//   BarChart,
+//   MailOutline,
+//   DynamicFeed,
+//   ChatBubbleOutline,
+//   WorkOutline,
+//   Report,
+//   LocalParking
+// } from "@material-ui/icons";
+import {PermIdentity} from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
 /* function MiniDrawer() {

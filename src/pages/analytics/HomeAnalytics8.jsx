@@ -1,7 +1,7 @@
 import "./HomeAnalytics2.css";
 import React from "react";
 import Chart from "react-apexcharts";
-import {productRows} from "../../dummyData"; 
+//import {productRows} from "../../dummyData"; 
 
       var _seed = 42;
       Math.random = function() {

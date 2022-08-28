@@ -1,22 +1,22 @@
 import "./transactionList.css";
 import { DataGrid } from "@material-ui/data-grid";
 import { DeleteOutline,HighlightOff,DoneAll } from "@material-ui/icons";
-import Battery90Icon from "@material-ui/icons/Battery90";
-import Battery60Icon from "@material-ui/icons/Battery60";
-import Battery30Icon from "@material-ui/icons/Battery30";
-import BatteryAlertIcon from "@material-ui/icons/BatteryAlert";
-import SignalCellularAltIcon from '@material-ui/icons/SignalCellularAlt';
-import SignalCellularOffIcon from '@material-ui/icons/SignalCellularOff';
-import SignalCellularConnectedNoInternet0BarIcon from '@material-ui/icons/SignalCellularConnectedNoInternet0Bar';
-import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
-import SettingsPowerIcon from '@material-ui/icons/SettingsPower';
-import PermDataSettingIcon from '@material-ui/icons/PermDataSetting';
-import SettingsIcon from '@material-ui/icons/Settings';
-import CodeIcon from '@material-ui/icons/Code';
-import LoopIcon from '@material-ui/icons/Loop';
-import BluetoothConnectedIcon from '@material-ui/icons/BluetoothConnected';
-import WifiIcon from '@material-ui/icons/Wifi';
-import BuildIcon from '@material-ui/icons/Build';
+// import Battery90Icon from "@material-ui/icons/Battery90";
+// import Battery60Icon from "@material-ui/icons/Battery60";
+// import Battery30Icon from "@material-ui/icons/Battery30";
+// import BatteryAlertIcon from "@material-ui/icons/BatteryAlert";
+// import SignalCellularAltIcon from '@material-ui/icons/SignalCellularAlt';
+// import SignalCellularOffIcon from '@material-ui/icons/SignalCellularOff';
+// import SignalCellularConnectedNoInternet0BarIcon from '@material-ui/icons/SignalCellularConnectedNoInternet0Bar';
+// import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
+// import SettingsPowerIcon from '@material-ui/icons/SettingsPower';
+// import PermDataSettingIcon from '@material-ui/icons/PermDataSetting';
+// import SettingsIcon from '@material-ui/icons/Settings';
+// import CodeIcon from '@material-ui/icons/Code';
+// import LoopIcon from '@material-ui/icons/Loop';
+// import BluetoothConnectedIcon from '@material-ui/icons/BluetoothConnected';
+// import WifiIcon from '@material-ui/icons/Wifi';
+// import BuildIcon from '@material-ui/icons/Build';
 import ErrorOutlineIcon from '@material-ui/icons/ErrorOutline';
 
 
@@ -144,7 +144,7 @@ export default function TransactionList() {
               </>
             );
           }
-          else if(params.row.status=="declined"){
+          else if(params.row.status==="declined"){
             return (
               <>
                 <div>

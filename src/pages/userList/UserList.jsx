@@ -1,7 +1,8 @@
 import "./userList.css";
 import { DataGrid } from "@material-ui/data-grid";
-import { DeleteOutline,HighlightOff,DoneAll, CropFree, DeleteOutlineRounded} from "@material-ui/icons";
-import {GridCellEditStopReasons} from "@material-ui/core";
+import { DeleteOutline} from "@material-ui/icons";
+//import {HighlightOff,DoneAll, CropFree, DeleteOutlineRounded} from "@material-ui/icons";
+//import {GridCellEditStopReasons} from "@material-ui/core";
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import { dataRows } from "../../dummyData";
 import { Link } from "react-router-dom";

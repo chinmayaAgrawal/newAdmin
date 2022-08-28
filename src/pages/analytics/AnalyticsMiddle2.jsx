@@ -1,6 +1,6 @@
 import "./analytics.css";
 
-import HomeAnalytics2 from './HomeAnalytics2';
+//import HomeAnalytics2 from './HomeAnalytics2';
 import React from 'react';
 
 

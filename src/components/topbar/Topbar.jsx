@@ -1,10 +1,10 @@
 import React from "react";
 import "./topbar.css";
-import { NotificationsNone, Language, Settings } from "@material-ui/icons";
+// import { NotificationsNone, Language, Settings } from "@material-ui/icons";
+// import User from "../../pages/user/User";
+// import QnA from "../qna/QnA";
 import { Link } from "react-router-dom";
-import User from "../../pages/user/User";
 import { issueRows,notifyRows } from "../../dummyData";
-import QnA from "../qna/QnA";
 import { useState } from "react";
 
 export default function Topbar() {

@@ -2,25 +2,61 @@
 
 <hr>
 
-## 
+This is basically frontend part of the knowlege-base of alternative to QNA maker chat bot.
+- To create a front-end application, where user would be able to insert QnA pairs for the knowledge base
+
+## Technologies used (till now..)
+
+``` React, HTML, CSS, JavaScript, MUI ```
+
+<hr>
+
+## Functionality added till now ..
+
+- User will be able to ```view qna pairs``` [*p1]
+- User will be able to ```add qna pair``` [*p2]
+- User will be able to ```on screen edit editable data``` [*p2]  
+- User Will be able to delete ```pair data``` [*p2]
+- ```Pagination``` is added
+- User can ```set rows per page```
+- Data can be ```sorted``` in 
+  - 1. lexographical order
+  - 2. order of activity status
+- Data columns can be made ```hide-show``` that is, can be made hidden or shown based on user preferences
+- Data can be ```filtered``` by user in a column in differnt forms
+  - 1. containing keywords - contains
+  - 2. starting with
+  - 3. ending with
+  - 4. having same as search words
+
+### terms 
+
+- p1: as of now only dummy data
+- p2: as of now only in user-view only
+
+<hr>
+
+## Getting Started
+
+``` 
+    npm install 
+    npm run start
+
+```
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The screen will automatically render in localhost:3000 provided that some other process is not blocking that port.
+
 
 ### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Available Scripts
+<hr>
 
-In the project directory, you can run:
+### Working
 
-#### `yarn start` or `npm run start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-##
 
 <!-- #### `yarn test`
 

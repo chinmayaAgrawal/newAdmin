@@ -1,7 +1,7 @@
 import "./analytics.css";
 import Analytics1 from './Analytics1';
 import Analytics2 from './Analytics2';
-import Analytics3 from './Analytics3';
+//import Analytics3 from './Analytics3';
 import React from 'react';
 
 

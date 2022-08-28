@@ -1,5 +1,5 @@
 import "./analytics.css";
-import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
+//import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
 import Chart from 'react-apexcharts';
 import React from 'react';
 

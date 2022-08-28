@@ -2,7 +2,7 @@ import { useState,useEffect } from 'react';
 import { CardContent } from '@material-ui/core';
 import { Card} from '@material-ui/core';
 import './QnA.css';
-import { Link, Router } from "react-router-dom";
+//import { Link, Router } from "react-router-dom";
 import Test from '../../pages/test/Test';
 
 export default function QnA() {

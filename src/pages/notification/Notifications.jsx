@@ -1,6 +1,6 @@
 import "./notifications.css";
 import  { notifyRows } from "../../dummyData";
-import { DeleteOutline } from "@material-ui/icons";
+//import { DeleteOutline } from "@material-ui/icons";
 import { useState } from "react";
 
 

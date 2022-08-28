@@ -5,7 +5,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
-//import Link from '@material-ui/core/Link';
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
@@ -16,9 +15,11 @@ import { useState } from 'react';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import LockIcon from '@material-ui/icons/Lock';
 import VisibilityIcon from '@material-ui/icons/Visibility';
-import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
+//import Link from '@material-ui/core/Link';
+// import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
+// import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import InputAdornment from '@material-ui/core/InputAdornment';
-import { BrowserRouter as Router, Switch, Route, Redirect,Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
